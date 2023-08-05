@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Orders</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+</head>
+<body>
+	<h2 class="h2"><b>Order Details<br><br></b></h2>
+<form class="row g-3">
+		<div class="row1">
+  <div class="col">
+  	<label for="inputfirstname" class="form-label">Order Number</label>
+    <input type="text" class="form-control" value="Or001" disabled>
+  </div>
+  <div class="col">
+  	<label for="inputlastname" class="form-label">Product Code</label>
+    <input type="text" class="form-control" value="" disabled>
+  </div>
+  <div class="col">
+    <label for="inputEmail4" class="form-label">Price</label>
+    <input type="text" class="form-control" id="price" value="$49" disabled>
+  </div>
+</div>
+<div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Estimated Date</label>
+    <input type="date" class="form-control" id="inputPassword4">
+  </div>
+  <div class="col-md-6">
+    <label for="inputState" class="form-label">Payment Method</label>
+    <select id="inputState" class="form-select">
+      <option selected>Choose...</option>
+      <option>Card</option>
+      <option>Cash</option>
+    </select>
+  </div>
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Quantity</label>
+    <input type="number" class="form-control" id="inputEmail4">
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Total Amount</label>
+    <input type="text" class="form-control" id="inputPassword4">
+  </div>
+  <div class="col9">
+    <button type="button" class="btn btn-primary btns" onclick="document.location='orders.html'">Pay Now!</button>
+  </div>
+</form>
+</body>
+</html>

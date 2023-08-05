@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Baby Dress - Dark Red</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<style>
+		h2{text-align: center;}
+		.row{padding: 80px 300px;}
+		.h2{margin-left: 0px;}
+    .img{margin-left: 620px;}
+     .btns{
+            text-align: center;
+            width: max-content;
+        }
+        h4{
+          padding-top: 35px;
+          text-align: center;
+        }
+	</style>
+</head>
+<body>
+	<h2 class="h2"><b>Baby Dress - Dark Red<br><br></b></h2>
+		<img class ="img"src="images/dress4.jpg" alt="dress" width="300" height="300">
+		
+	<form class="row g-3" action="babydressdarkred.php" method="POST">
+		<div class="row1">
+    <div class="col">
+      <label for="inputfirstname" class="form-label">Order ID</label>
+      <input type="text" class="form-control" name="oid">
+    </div>
+  <div class="col">
+  	<label for="inputfirstname" class="form-label">Product Code</label>
+    <input type="text" class="form-control" value="PR002" readonly name="pcode">
+  </div>
+  <div class="col">
+  	<label for="inputlastname" class="form-label">Product Name</label>
+    <input type="text" class="form-control" value="Baby Dress - Dark Red" readonly name="pname">
+  </div>
+  <div class="col">
+    <label for="a" class="form-label">Price</label>
+    <input type="text" class="form-control" id="a" value="49" readonly name="price">
+  </div>
+</div>
+<div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Estimated Date</label>
+    <input type="date" class="form-control" id="inputPassword4" name="edate">
+  </div>
+
+  <div class="col-md-6">
+    <label for="b" class="form-label">Quantity</label>
+    <input type="number" class="form-control" id="b" value="0" name="qty">
+    <br>
+  </div>
+
+  <div class="col-md-12">
+    <h4>Total Price: <span id="totalPrice">0</span></h4>
+  </div>
+  
+  <input type="button" class="abc" value="Generate Total" onclick="myFunction()" />
+  
+  <div class="col9">
+    <button type="submit" class="btn btn-primary btns">Order Now!</button>
+  </div>
+
+</form>
+</body>
+
+<script>
+  function myFunction() {
+      var a = document.getElementById("a").value;
+      var b = document.getElementById("b").value;
+
+      var total = a*b;
+      document.getElementById("totalPrice").innerHTML = total;
+}
+ </script>
+
+</html>

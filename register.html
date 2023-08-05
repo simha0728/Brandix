@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>register</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<style>
+		h2{text-align: center;}
+		.row{padding: 50px 300px;}
+
+	</style>
+</head>
+<body>
+	<form class="row g-3" action="register.php" method="POST">
+		<h2><b>Registration<br><br></b></h2>
+		<div class="row1">
+      <div class="col">
+  	    <label for="firstname" class="form-label">First Name</label>
+        <input type="text" class="form-control" name="firstname">
+      </div>
+
+      <div class="col">
+  	    <label for="lastname" class="form-label">Last Name</label>
+        <input type="text" class="form-control" name="lastname">
+      </div>
+      
+    </div>
+    <div class="col-md-9">
+      <label for="cnumber" class="form-label">Card Number</label>
+        <input type="text" class="form-control" id="cnumber" name="cnumber">
+        <div id="emailHelp" class="form-text">12 digit number front of the card.</div>
+    </div>
+
+    <div class="col-md-3">
+      <label for="cvv" class="form-label">CVV</label>
+          <input type="text" class="form-control" id="cvv" name="cvv">
+          <div id="emailHelp" class="form-text">3 digit number behind the card.</div>
+    </div>
+
+      <div class="col-md-6">
+        <label for="mail" class="form-label">Email</label>
+        <input type="email" class="form-control" id="mail" name="mail">
+      </div>
+
+      <div class="col-md-6">
+        <label for="password1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password1" name="password1">
+      </div>
+
+      <div class="col-md-6">
+        <label for="dob" class="form-label">Date Of Birth</label>
+        <input type="date" class="form-control" id="dob" name="dob">
+      </div>
+
+      <div class="col-md-6">
+        <label for="nicnumber" class="form-label">NIC Number</label>
+        <input type="text" class="form-control" id="nicnumber" name="nicnumber">
+      </div>
+
+      <div class="col-14">
+        <label for="tpno" class="form-label">Contact No</label>
+        <input type="text" class="form-control" id="tpno" name="tpno">
+      </div>
+  
+      <div class="col-13">
+        <label for="address" class="form-label">Address</label>
+        <input type="text" class="form-control" id="address" name="address">
+      </div>
+
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            I agree privacy & policy
+          </label>
+        </div>
+      </div>
+  <div class="col9">
+    <button type="submit" class="btn btn-primary" onclick="document.location='complete_registered.html'">Register</button>
+  </div>
+</form>
+</body>
+</html>

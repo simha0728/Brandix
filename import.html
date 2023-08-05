@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Import</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<style>
+		h2{text-align: center;}
+		.row{padding: 80px 300px;}
+		.h2{margin-left: 0px;}
+		.img{margin-left: 500px;}
+    .btns{
+            text-align: center;
+            width: max-content;
+        }
+	</style>
+</head>
+<body>
+	<h2 class="h2"><b>Import Details<br><br></b></h2>	
+	<form class="row g-3" action="import.php" method="post">
+		<div class="row1">
+      <div class="col">
+        <label for="inputfirstname" class="form-label">ID</label>
+        <input type="text" class="form-control" name="id">
+      </div>
+  <div class="col">
+  	<label for="inputfirstname" class="form-label">Import Code</label>
+    <input type="text" class="form-control" value="I001" name="icode" readonly>
+  </div>
+  <div class="col">
+  	<label for="inputlastname" class="form-label">Country</label>
+    <input type="text" class="form-control" name="country">
+  </div>
+  <div class="col">
+    <label for="inputEmail4" class="form-label">Transport</label>
+    <input type="text" class="form-control" id="price" name="transport">
+  </div>
+</div>
+  <div class="col-md-6">
+    <label for="inputState" class="form-label">Payment Method</label>
+    <select id="inputState" class="form-select" name="payment">
+      <option selected>Choose...</option>
+      <option>Card</option>
+      <option>Cash</option>
+    </select>
+  </div>
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Product Quantity</label>
+    <input type="number" class="form-control" id="inputEmail4" name="quantity">
+  </div>
+  <div class="col9">
+    <button type="submit" class="btn btn-primary btns">Finish</button>
+  </div>
+</form>
+
+</body>
+</html>

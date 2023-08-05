@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        form{
+           
+            padding-left: 500px;
+            align-items: center;
+        }
+        .btns{
+            text-align: center;
+            width: max-content;
+        }
+        .reg{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+            padding-top: 50px;
+        }
+        button{
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>LOGIN</h2>
+    <form class="row g-3">
+        
+        <div class="col-md-6 div1">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          <br />     
+
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password">
+          <br>
+
+            <button onclick="document.location='kids.html'" type="button" class="btn btn-primary btns">Login</button>
+
+          <div class="reg">
+            <br>
+            Don't have an account
+            <br>
+            <a href="register.html">Register an account</a>
+          </div>
+        </div>
+      </form>
+</body>
+</html>
